@@ -1,0 +1,12 @@
+#data:
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web
+  labels:
+    env: test
+spec:
+  containers:
+  - name: webapp
+    image: cerfscode/web:1.0.0
+    imagePullPolicy: IfNotPresent
